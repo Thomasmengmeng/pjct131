@@ -13,10 +13,10 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const drawRates = {
-        "SSR": 0.02,  // 2%
-        "SR": 0.08,   // 8%
-        "R": 0.30,    // 30%
-        "N": 0.60     // 60%
+        "SSR": 0.1,  // 2%
+        "SR": 0.2,   // 8%
+        "R": 0.3,    // 30%
+        "N": 0.4     // 60%
     };
 
     function drawCard() {
