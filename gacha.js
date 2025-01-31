@@ -6,17 +6,23 @@ document.addEventListener('DOMContentLoaded', () => {
     const rarity = document.getElementById('rarity');
 
     const cardPool = {
-        "SSR": { name: "SSR"},
-        "SR": { name: "SR"},
-        "R": { name: "R"},
-        "N": { name: "N"}
+        "SSR": { name: "SSR" },
+        "UR": { name: "UR" },
+        "SR": { name: "SR" },
+        "R": { name: "R" },
+        "N": { name: "N" },
+        "◇N": { name: "◇N" },
+        "CR": { name: "CR" }
     };
 
     const drawRates = {
-        "SSR": 0.1,  // 2%
-        "SR": 0.2,   // 8%
-        "R": 0.3,    // 30%
-        "N": 0.4     // 60%
+        "SSR": 0.19,
+        "UR": 0.1,
+        "SR": 0.2,
+        "R": 0.2,
+        "N": 0.2,
+        "◇N": 0.1,
+        "CR": 0.01
     };
 
     function drawCard() {
@@ -54,6 +60,6 @@ document.addEventListener('DOMContentLoaded', () => {
             drawCard();
             drawBtn.disabled = false;
             drawBtn.textContent = "再次抽卡";
-        }, 200);  // 延迟 2 秒
+        }, 2);  // 延迟 2 秒
     });
 });
